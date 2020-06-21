@@ -159,7 +159,6 @@ h4{
   color: black;
 }
 
-/* Clear floats after each column */
 .row:after {
   content: "";
   display: table;
