@@ -1,4 +1,3 @@
-# EpsilonHacks
 # Inspiration
 With COVID-19, the attack surface for hackers has greatly increased and it is important people know how to educate themselves. Also, cybersecurity is a growing field and it is important for students to begin educating themselves now.
 
