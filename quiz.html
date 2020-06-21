@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cyberhub</title>
+    <style>
+    #main {
+    width: 80%;
+    max-width: 950px;
+    border: 1px gray solid;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    align-content:center;
+    }
+    label {
+    display: block;
+    }
+
+    input {
+    width: 30px;
+    margin-left: 20px;
+    }
+
+    button {
+    width: 100px;
+    margin-top: 20px;
+    }
+    </style>
+  </head> 
+  <header> 
+    <div class="main">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li class="active"><a href="/quiz.html">Quiz</a></li>
+          <li><a href="/password.html">Chatbot</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+        </ul>
+        </div>
+        <div class="title1">
+          <h1 style="color:#FFFFFF";>CYBER HUB </h1>
+        </div> 
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+  <body>
+    <br><br><br>
+    <h1 style="text-align:center;color:white;font-size:50px;"> <b> QUIZ </b> </h1>
+    <br>
+    <div class="ani">
+    <p style="background-color: white"> <b>Instructions:</b><br> Welcome! This quiz will ask you about some of your technology habits. Your answers will determine the reccomendations we give on how you should improve your security. Please be honest!
+      </p>
+      </div>
+    <br>
+    <div id="main"><!-- open main div -->
+    <form id="form1">
+      <h3>Would you say that your online practices (related to work or school) are different during COVID-19?</h3>
+      <label for="yes"><input type="radio" name="one" value="1" id="var_string" />Yes</label>
+      <label for="no"><input type="radio" name="one" value="0" id="var_join" />No</label>
+      <p> <br> </p>
+      <h3> How do you store your passwords? Select one option.</h3>
+      <label for="remember"><input type="radio" name="two" value="0" id="var_string" />I just remember them</label>
+      <label for="same"><input type="radio" name="two" value="0" id="var_join" />All my passwords are the same so it is easy to keep track</label>
+      <label for="manager"><input type="radio" name="two" value="1" id="var_string" />I use a password manager
+      </label>
+      <label for="write"><input type="radio" name="two" value="0" id="var_string" />I write my passwords down</label>
+      <p> <br> </p>
+      <h3>How often do you use public wifi?</h3>
+      <label for="every"><input type="radio" name="three" value="0" id="var_string" />Every time I go out!</label>
+      <label for="most"><input type="radio" name="three" value="0" id="var_string" />Most times</label>
+      <label for="avoid"><input type="radio" name="three" value="1" id="var_string" />I try and avoid it</label>
+      <p> <br> </p>
+
+      <h3>How often do you patch your computer?</h3>
+      <label for="confused"><input type="radio" name="four" value="0" id="var_string" />What is a patch?</label>
+      <label for="month"><input type="radio" name="four" value="1" id="var_string" />Once a month</label>
+      <label for="year"><input type="radio" name="four" value="0" id="var_string" />Every 3-4 months</label>
+      <p> <br> </p>
+
+      <h3>Do your passwords include the names of things or people that are familiar to you? </h3>
+      <label for="family"><input type="radio" name="five" value="0" id="var_string" />Yes, that way it will be easier to remember them.</label>
+      <label for="nope"><input type="radio" name="five" value="1" id="var_string" />No</label>
+      <p> <br> </p>
+
+    <h3> When you receive an email or text from a company or site you have an account with, what do you usually do? </h3>
+    <label for="comply"><input type="radio" name="six" value="0" id="var_string" />Follow the instructions they give you, looking at any attachments or links if you need to</label>
+    <label for="check"><input type="radio" name="six" value="1" id="var_string" />Verify that the email does in fact come from the company, wait before clicking on any attachments or links</label>
+    <p> <br> </p>
+
+    <h3> Your computer starts acting odd: you are taken to websites you never clicked on or you see that things have been downloaded without your permission. What do you do? </h3>
+    <label for="normal"><input type="radio" name="seven" value="0" id="var_string" />Keep using your computer normally but avoid the things that look malicious</label>
+    <label for="help"><input type="radio" name="seven" value="1" id="var_string" />Stop using your computer and contact some sort of customer support center for help</label>
+    <label for="careful"><input type="radio" name="seven" value="1" id="var_string" />Keep using your computer but be sure to not enter any personal information anywhere and to use an alternative search engine</label>
+    <p> <br> </p>
+
+    <h3> What do you do if you suspect fraud or identity theft? </h3>
+    <label for="wait"><input type="radio" name="eight" value="0" id="var_string" />Wait for the company to contact you</label>
+    <label for="contact"><input type="radio" name="eight" value="0" id="var_string" />Contact the companies and banks where you know fraud occurred</label>
+    <label for="alerts"><input type="radio" name="eight" value="0" id="var_string" />Place fraud alerts and get your credit reports</label>
+    <label for="report"><input type="radio" name="eight" value="0" id="var_string" />Report identity theft to the FTC</label>
+    <label for="all"><input type="radio" name="eight" value="1" id="var_string" />Options 2, 3, and 4</label>
+    <p> <br> </p>
+
+    <button type="submit" value="Submit">Submit</button>
+    </form>
+
+  <p> <b> Your cyberscore: </b> <span id="grade">__</span></p>
+  <p id="grade2"> (out of 8)</p>
+
+  <p> <b> Our reccomendations based on your results: <br> </b> <span id="resultsYay">__</span></p>
+  
+  </div><!-- close main div -->
+  <script>
+  document.getElementById("form1").onsubmit=function() 
+  {
+       one = parseInt(document.querySelector('input[name = "one"]:checked').value);
+      two = parseInt(document.querySelector('input[name = "two"]:checked').value);
+      three = parseInt(document.querySelector('input[name = "three"]:checked').value);
+      four = parseInt(document.querySelector('input[name = "four"]:checked').value);
+      five = parseInt(document.querySelector('input[name = "five"]:checked').value);
+      six = parseInt(document.querySelector('input[name = "six"]:checked').value);
+      seven = parseInt(document.querySelector('input[name = "seven"]:checked').value);
+      eight = parseInt(document.querySelector('input[name = "eight"]:checked').value);
+	    result = one + two + three + four + five + six + seven + eight;
+	   
+	  document.getElementById("grade").innerHTML = result;
+
+    responseOne = '';
+    if (one != 1) 
+    {
+      responseOne = responseOne + '___[Q1]___ We recommend you check with your company (if applicable) since most will have more strict security guidelines for remote work. If you have a job or are in school, see our other recommendations for how to make yourself more secure.' 
+    } 
+    if (two != 1) 
+    {
+      responseOne = responseOne + '___[Q2]___ Use a password manager! Password managers encrypt your passwords so that hackers can not easily steal them. Plus, they allow you to have unique passwords for every account without having to worry about forgetting them (having unique passwords is very important so that if one account is compromised, your other accounts will still be safe).' 
+    }
+    if (three != 1) 
+    {
+      responseOne = responseOne + '___[Q3]___ Public wifi networks are easily hackable. Hackers can launch what is called a “man-in-the-middle” attack where they intercept traffic coming from your device before you connect to the internet. To be safer, either avoid public wifi or download a free VPN which will encrypt your phone traffic (there are many free options). Or, if possible, avoid using your phone when there is no secure network to connect to!' 
+    }
+    if (four != 1) 
+    {
+      responseOne = responseOne + '___[Q4]___ A patch is a piece of software issued by companies that are meant to address security vulnerabilities in a program or product of theirs. For the easiest solution, lookup how you can automate updates on your device, otherwise, check the vendor site at least monthly for updates (see our resources page for more info). Only update when you are connected to a private network! Windows devices: download OUTDATEfighter or Autopatcher. For macs: download Patch Manager Plus.' 
+    }
+    if (five != 1) 
+    {
+      responseOne = responseOne + '___[Q5]___ Using the names of people or things that are familiar to you is not always the safest option. It is dangerous because that information could be found online via social media or google searches and allow a hacker to essentially guess your password. Instead, try using “passphrases” instead of passwords. Here is an example: take any quote like “The Sun Sets on the British Empire”. Then, transform the quote of your choice into something like this: tH3SunS3ts0nTheBritiSh3MPir3. Replacing E with 3 or O with 0 is called leet speak and can make your passwords more difficult to crack. Also, be sure to alternate between capital and lowercase letters.' 
+    }
+    if (six != 1) 
+    {
+      responseOne = responseOne + '___[Q6]___ It is always a good idea to verify who sent the email before clicking on any links or opening attachments since these could contain malware (software that does harm to your computer or tries to steal information). Some things you can do: look at the email address to see if it looks right, check for spelling mistakes (if there are any, the email probably isn’t safe as companies would likely not make many errors), think about if you understand why you are getting the email or text in the first place.' 
+    }
+    if (seven != 1) 
+    {
+      responseOne = responseOne + '___[Q7]___ If your computer is behaving oddly, there is likely some malware on your computer. This means that your information could very likely be in the process of being stolen. If you can, contact a help center for guidance on the problem. Or, if you do not have time to get help at the moment, avoid logging in to any accounts and use a search engine like DuckDuckGo. An alternative search engine like this makes it safer for you to go about doing what you need to do.' 
+    }
+    if (eight != 1) 
+    {
+      responseOne = responseOne + '___[Q8]___ If you suspect there has been fraud or identity theft against you, follow these general steps (see the resources page for more information): Contact the companies and banks where you know fraud occurred, Place fraud alerts and get your credit reports, and Report identity theft to the FTC.' 
+    }
+    document.getElementById("resultsYay").innerHTML = responseOne;
+
+  return false;
+  } 
+  
+
+</script>
+
+
+  </body>
+ </header> 
+</html>
